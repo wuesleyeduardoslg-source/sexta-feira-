@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>W.E.T.S IA Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>W.E.T.S IA Web</h1>
+
+  <div class="botoes">
+    <button onclick="modulo('calculadora')">Calculadora</button>
+    <button onclick="modulo('D20')">D20</button>
+    <button onclick="modulo('musica')">Música</button>
+    <button onclick="voz()">Comando de Voz</button>
+  </div>
+
+  <div class="web">
+    <input type="text" id="urlInput" placeholder="URL para scraping ou download">
+    <button onclick="scrape()">Scrape</button>
+    <button onclick="download()">Download</button>
+  </div>
+
+  <div class="busca">
+    <input type="text" id="queryInput" placeholder="Pesquisar na web">
+    <button onclick="search()">Pesquisar</button>
+  </div>
+
+  <div id="status">Status: Aguardando comando...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
